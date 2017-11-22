@@ -1,0 +1,206 @@
+h1{
+    font-family: "Raleway", sans-serif
+}
+
+.upbtn {
+  position: absolute;
+  left: 70%;
+  top: 5%;
+}
+
+.rand {
+  position: absolute;
+  left: 60%;
+  top: 5%;
+}
+
+.set {
+    position: absolute;
+    left: 80%;
+    top: 5%;
+}
+.stest {
+    width: 400px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 10px 12px 40px;
+}
+
+.imgs{
+    position: absolute;
+    top: 35px;
+    left: 50px;
+}
+.searchs{
+    position: absolute;
+    left: 220px;
+}
+
+.search {    
+    position: absolute;
+    left: 40%;   
+    top: 3%;
+}
+
+.username {
+    font-family: "Raleway", sans-serif;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline; 
+    position: absolute;
+    left: 40%;
+    top: 11.5%;
+}
+
+.prof_pic {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+}
+
+.prof_pic img {
+    width: 120px;
+    height: 100px;
+    margin: 7px 7px 7px 7px;
+    border-radius: 50%;
+}
+
+.show {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+.show img {
+    width: 160px;
+    height: 140px;
+    margin: 7px 7px 7px 7px;
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+
+.show img:hover {
+    opacity: 0.7;
+}
+
+.dis {
+display:inline-block;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    max-height: 500px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#caption {
+    font-size: 25px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-height: 500px){
+    .modal-content {
+        height: 100%;
+    }
+}
+
+/* Modal Content */
+.upmodal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
